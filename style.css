@@ -1,218 +1,430 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('font/Rubik/Rubik.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('font/Roboto_mono/RobotoMono.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'ShentoxRegular';
+  src: url('font/Shentox_Regular/ShentoxRegular.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('font/Open_Sans/OpenSans.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'SourceCodeProRegular';
+  src: url('font/SourceCodePro/SourceCodePro-Regular.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Geologica';
+  src: url('font/Geologica/ofont.ru_Geologica.ttf');
+  /* Путь к файлу шрифта */
+}
+
+/* Сброс стандартных стилей */
 body {
   margin: 0;
-  min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  padding: 0;
+  font-family: Geologica, monospace;
+  /* Установка шрифта */
   font-size: 16px;
-  line-height: 32px;
-  color: #222222;
-  background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.container {
-  max-width: 928px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.page-header {
-  margin: 0 0 160px;
-  padding: 32px 0 32px;
-}
-
-.page-header .container,
-.page-footer .container {
-  max-width: 1408px;
-  text-align: right;
-}
-
-.page-header a {
-  margin-left: 56px;
-  color: #288be6;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
-}
-
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
-}
-
-.hero-image {
-  margin-bottom: 620px;
-}
-
-.hero-image .container {
-  max-width: 1408px;
-  text-align: center;
-}
-
-.heading {
-  margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
-  line-height: 96px;
-  font-weight: 400;
-}
-
-.hero-image p {
-  margin: 0;
-  font-size: 32px;
-  line-height: 48px;
+  /* Размер шрифта по умолчанию */
+  line-height: 1.6;
+  /* Межстрочный интервал */
 }
 
 .intro {
-  margin: 0 0 120px;
+  position: relative;
+  /* 100% высоты видимой области */
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  box-sizing: border-box;
 }
 
-.subheading {
-  margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 64px;
-  line-height: 80px;
-  font-weight: 400;
-  text-align: center;
+.link-to-github {
+  font-family: Geologica;
+  color: white;
+  font-size: 16px;
+  margin: 20px;
 }
 
-.user-image {
-  margin: 0 0 32px;
-  text-align: center;
+.centered-block {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  max-height: 250px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: transparent;
+  /* Прозрачный фон */
+  color: white;
+  /* Белый текст */
+  box-sizing: border-box;
+  /* Учитывать padding в размерах блока */
 }
 
-.intro h3,
-.portfolio h3 {
-  margin: 0 0 12px;
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 500;
+.centered-block h1 {
+  font-family: ShentoxRegular;
+  font-weight: bold;
+  font-size: 72px;
+  margin-left: -3px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
-.intro p {
-  margin: 0 0 32px;
+.centered-block h3 {
+  font-family: ShentoxRegular;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 0px;
+  margin-top: -10px;
 }
 
-.skills-list {
+.main-container {
+  width: 1024px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Общие стили для всех элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  /* Жирный шрифт для заголовков */
+  margin-top: 40px;
+}
+
+/* Общие стили для заголовков */
+h1 {
+  font-size: 24px;
+  /* Размер шрифта для h1 */
+}
+
+h2 {
+  font-size: 22px;
+  /* Размер шрифта для h2 */
+}
+
+h3 {
+  font-size: 20px;
+  /* Размер шрифта для h2 */
+}
+
+h4 {
+  font-size: 18px;
+  /* Размер шрифта для h2 */
+}
+
+p {
+  font-size: 14px;
+}
+
+hr.border-right {
+  margin-top: 30px;
+}
+
+div.border-left {
+  height: 2px;
+  background-color: #c9e3bff2;
+}
+
+div.border-right {
+  height: 2px;
+  background-color: #c9e3bff2;
+  /* Задаем цвет линии */
+  width: 248px;
   margin: 0;
+  /* Убираем отступы */
+  margin-top: 15px;
   padding: 0;
+  /* Убираем внутренние отступы */
 }
 
-.skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+  /* Отступ снизу для абзацев */
 }
 
-.skill-yd {
-  background-image: url("img/icon-YD.png");
+.block-for-center {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали (если требуется) */
+  height: 80px; /* Обеспечивает, что блок занимает всю высоту родителя */
 }
 
-.skill-ga {
-  background-image: url("img/icon-GA.png");
+.download-button {
+  font-size: 20px;
+  font-family: ShentoxRegular;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  border-width: 0px;
+  color: #fff;
+  border-color: rgba(111, 140, 101, 0.61);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 3px 3px 2px 0px rgba(111, 140, 101, 1);
+  background: linear-gradient(rgba(111, 140, 101, 1), rgba(111, 140, 101, 0.61));
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.skill-ganalalytics {
-  background-image: url("img/icon-GAnal.png");
+.download-button:hover {
+  background: linear-gradient(rgba(111, 140, 101, 0.61), rgba(111, 140, 101, 1));
 }
 
-.skill-ym {
-  background-image: url("img/icon-YM.png");
+.download-button:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 1px 0px rgba(111, 140, 101, 0.7);
 }
 
-.skill-gtm {
-  background-image: url("img/icon-GTM.png");
+a {
+  color: #6f8c65f2;
+  /* Установите желаемый цвет ссылки, например, красный (#ff0000) */
+  text-decoration: none;
+  /* Убираем подчеркивание (если необходимо) */
 }
 
-.skill-html {
-  background-image: url("img/icon-html.svg");
+/* Стили при наведении на гиперссылку */
+a:hover {
+  color: #df3f3fd8;
+  /* Установите цвет при наведении, например, зеленый (#00ff00) */
 }
 
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
-.skill-js {
-  background-image: url("img/icon-JS.png");
-}
-
-.level {
-  margin: 4px 0 16px;
+ul {
+  list-style-type: none;
+  /* Убираем маркеры */
   padding: 0;
-  height: 14px;
-  font-size: 0;
+  /* Убираем внутренний отступ */
+  margin: 0;
+  /* Убираем внешний отступ */
+}
+
+.icon {
+  margin-right: 5px
+}
+
+.icon i {
+  color: #6f8c65f2;
+}
+
+.skills {
+  margin-top: 15px;
+}
+
+.skill-bar {
   background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
+  height: 6px;
+  width: 248px;
+  margin-top: 5px;
 }
 
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
+.fill {
+  background-color: #6f8c65f2;
+  height: 100%;
 }
 
-.portfolio {
-  margin: 0 0 120px;
+/* Общие стили для контейнера страницы */
+.container {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.right-column {
+  width: 33%;
+  padding-top: 20px;
+  color: #5d5d5d;
 }
 
-.projects li {
-  margin: 0 0 80px;
+.background {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #faeffff4;
+  background:
+    url('files/cubes.png') repeat,
+    #faeffff4;
+  border: 1px solid #faeffff4;
+  box-sizing: border-box;
+  /* Добавьте это свойство */
 }
 
-.project-image {
-  margin: 0 0 24px;
+.text-right-column {
+  width: 100%;
+}
+
+.section-right-column {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.left-column {
+  width: 67%;
+  background-color: #ffffff;
+  /* Светлая колонка */
+  padding-top: 20px;
+  color: #5d5d5d;
+}
+
+.section-left-column {
+  width: 88.5%;
+  padding: 20px;
+  /* Внутренние отступы для контейнера */
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: auto;
+  background-color: #ffffffde;
+  border: 1px solid #c9e3bff2;
+}
+
+footer div p {
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
+  /* Чтобы содержимое футера было выровнено по центру */
+  padding: 10px 0;
+  /* Настройка отступов сверху и снизу для выравнивания по вертикали */
 }
 
-.projects p {
-  margin: 0 0 24px;
-}
+/* Мобильная версия */
+@media (max-width: 768px) {
 
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
-}
+  .centered-block h1 {
+    font-family: ShentoxRegular;
+    font-weight: bold;
+    font-size: 44px;
+    margin-left: 17px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
 
-.page-footer {
-  padding: 40px 0;
-  background-color: #00417d;
-  color: #ffffff;
-}
+  .centered-block h3 {
+    font-family: ShentoxRegular;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
 
-.page-footer a {
-  margin-left: 56px;
-  color: inherit;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
+  .link-to-github {
+    font-family: Geologica;
+    color: white;
+    font-size: 16px;
+    margin: 17px;
+  }
 
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
-}
+  .main-container {
+    width: 100%;
+  }
 
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .right-column {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 10px;
+  }
+
+  .profile-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-left-column {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .section-right-column {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .right-column li {
+    font-size: 14px;
+  }
+
+  hr.border_right {
+    margin-top: 0px;
+  }
+
+  .skill-bar {
+    background-color: #ffffff;
+    height: 6px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fill {
+    background-color: rgba(111, 140, 101, 0.949);
+    height: 100%;
+  }
 }
