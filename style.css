@@ -34,6 +34,12 @@
   /* Путь к файлу шрифта */
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat/ofont.ru_Montserrat.ttf');
+  /* Путь к файлу шрифта */
+}
+
 /* Сброс стандартных стилей */
 body {
   margin: 0;
@@ -57,7 +63,7 @@ body {
 }
 
 .link-to-github {
-  font-family: Geologica;
+  font-family: Geologica, monospace;
   color: white;
   font-size: 16px;
   margin: 20px;
@@ -81,7 +87,7 @@ body {
 }
 
 .centered-block h1 {
-  font-family: ShentoxRegular;
+  font-family: Montserrat, monospace;
   font-weight: bold;
   font-size: 72px;
   margin-left: -3px;
@@ -90,7 +96,7 @@ body {
 }
 
 .centered-block h3 {
-  font-family: ShentoxRegular;
+  font-family: Montserrat, monospace;
   font-weight: bold;
   font-size: 24px;
   margin-left: 0px;
@@ -321,7 +327,7 @@ footer div p {
 @media (max-width: 768px) {
 
   .centered-block h1 {
-    font-family: ShentoxRegular;
+    font-family: Montserrat, monospace;
     font-weight: bold;
     font-size: 44px;
     margin-left: 17px;
@@ -330,7 +336,7 @@ footer div p {
   }
 
   .centered-block h3 {
-    font-family: ShentoxRegular;
+    font-family: Montserrat, monospace;
     font-weight: bold;
     font-size: 20px;
     margin-left: 20px;
@@ -361,6 +367,7 @@ footer div p {
 
 
   .right-column {
+    margin-top: 40px;
     box-sizing: border-box;
     width: 100%;
     padding-left: auto;
@@ -414,6 +421,11 @@ footer div p {
     margin-top: 0px;
   }
 
+  section.section-right-column h3,
+  section.section-right-column ul {
+    margin-left: 30px;
+  }
+
   .skill-bar {
     background-color: #ffffff;
     height: 6px;
@@ -424,6 +436,7 @@ footer div p {
   }
 
   .fill {
+    margin-left: -30px;
     background-color: rgba(111, 140, 101, 0.949);
     height: 100%;
   }
