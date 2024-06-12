@@ -151,21 +151,9 @@ hr.border-right {
   margin-top: 30px;
 }
 
-div.border-left {
-  height: 2px;
-  background-color: #c9e3bff2;
-}
-
-div.border-right {
-  height: 2px;
-  background-color: #c9e3bff2;
-  /* Задаем цвет линии */
-  width: 248px;
-  margin: 0;
-  /* Убираем отступы */
-  margin-top: 15px;
-  padding: 0;
-  /* Убираем внутренние отступы */
+hr.border-left {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 p {
@@ -329,7 +317,7 @@ footer div p {
   .centered-block h1 {
     font-family: Montserrat, monospace;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 36px;
     margin-left: 17px;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -338,7 +326,7 @@ footer div p {
   .centered-block h3 {
     font-family: Montserrat, monospace;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 20px;
     margin-top: -10px;
   }
