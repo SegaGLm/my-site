@@ -182,7 +182,7 @@ p {
 }
 
 .download-button {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Montserrat;
   font-weight: bold;
   width: 200px;
@@ -329,7 +329,7 @@ footer div p {
   .centered-block h1 {
     font-family: Montserrat, monospace;
     font-weight: bold;
-    font-size: 44px;
+    font-size: 34px;
     margin-left: 17px;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -338,7 +338,7 @@ footer div p {
   .centered-block h3 {
     font-family: Montserrat, monospace;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 20px;
     margin-top: -10px;
   }
@@ -439,5 +439,23 @@ footer div p {
     margin-left: -30px;
     background-color: rgba(111, 140, 101, 0.949);
     height: 100%;
+  }
+
+  .download-button {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border-width: 0px;
+    color: #fff;
+    border-color: rgba(111, 140, 101, 0.61);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 3px 3px 2px 0px rgba(111, 140, 101, 1);
+    background: linear-gradient(rgba(111, 140, 101, 1), rgba(111, 140, 101, 0.61));
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
   }
 }
