@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="files/free-icon-secured-network-8644536.png" type="image/png">
   <script src="https://kit.fontawesome.com/96f6ca4fb2.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('downloadButton').addEventListener('click', function () {
+        var fileUrl = 'files/Resume_Sergei_Gritsenko.pdf'; // замените на реальную ссылку на файл
+        var link = document.createElement('a');
+        link.href = fileUrl;
+        link.setAttribute('download', 'resume_serge_gritsenko.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -73,7 +86,7 @@
             <p>Спроектировал и разработал объемную отчетность по рекламным кампаниям в Google Таблицах.</p>
             <p>Автоматизировал отчетность по РК в Looker Studio, работая с БД GA4, Adjust, Google Ads, Backend в Google
               BigQuery.</p>
-            <p>Организовал размещение медийной рекламы на рекламных площадках подрядчиков.</p>
+            <p style="text-align: left;">Организовал размещение медийной рекламы на рекламных площадках подрядчиков.</p>
           </div>
         </section>
         <section id="portfolio" class="section-left-column">
@@ -102,7 +115,7 @@
             <h4 style="margin-bottom: 0px;">Старший менеджер по контекстной рекламе</h4>
             <p style="margin-top: 0px;">Январь 2016 — июль 2018</p>
             <hr class="border-left" style="border: 1px solid #c9e3bff2;"> <!-- Линия -->
-            <p>С нуля разработал, настроил и сопровождал РК Яндекс.Директ и Google AdWords ключевого клиента агентства
+            <p>Разработал, настроил и сопровождал РК Яндекс.Директ и Google AdWords ключевого клиента агентства
               Альфа-Банк с выкупом полной ёмкости. Провел множество A/B тестов и различных тестовых запусков для поиска
               точек роста и увеличения рекламных бюджетов клиента. Увеличил поток лидов.</p>
             <p>Продукт РКО:
@@ -129,7 +142,8 @@
             <p>Лидогенерация: 2500 лидов/мес
               <br>Бюджет: 1 500 000 руб/мес
             </p>
-            <p>Организовал подключение дополнительных маркетинговых инструментов подрядчиков.</p>
+            <p style="text-align: left;">Организовал подключение дополнительных маркетинговых инструментов подрядчиков.
+            </p>
         </section>
         <section id="portfolio" class="section-left-column" style="margin-bottom: 0px;">
           <div class="project">
@@ -142,7 +156,8 @@
             <p>Разработал рекламные кампании со сложной структурой в сервисах Яндекс.Директ и Google AdWords. Приводил в
               компанию 60 клиентов в день на аренду и покупку коммерческой недвижимости.</p>
             <p>Лидогенерация: 1200 лидов/мес
-              <br>Бюджет: 1 000 000 руб/мес</p>
+              <br>Бюджет: 1 000 000 руб/мес
+            </p>
             <p>Организовал выполнение условий для заключения агентского договора с Яндексом для внутреннего рекламного
               агентства компании Realty Guide и заключил договор. Вел РК клиентов рекламного агентства.</p>
         </section>
@@ -153,7 +168,7 @@
             <!-- Контент для правой колонки -->
             <section class="section-right-column">
               <div class="block-for-center">
-                <button class="download-button">Скачать резюме</button>
+                <button id="downloadButton" class="download-button">Скачать резюме</button>
               </div>
             </section>
             <section class="section-right-column">
@@ -205,12 +220,12 @@
               <ul>
                 <li class="skills">Яндекс Директ
                   <div class="skill-bar">
-                    <div class="fill" style="width: 100%;"></div>
+                    <div class="fill" style="width: 95%;"></div>
                   </div>
                 </li>
                 <li class="skills">Direct Commander
                   <div class="skill-bar">
-                    <div class="fill" style="width: 100%;"></div>
+                    <div class="fill" style="width: 95%;"></div>
                   </div>
                 </li>
                 <li class="skills">Google Ads
@@ -279,12 +294,12 @@
               <hr class="border-right" style="border: 1px solid #c9e3bff2; margin-top: 40px;"> <!-- Линия -->
               <h3>Образование</h3>
               <ul>
-                <li class="skills">Высшее образование
+                <li class="education">Высшее образование
                   <br>МГППУ: Факультет <br>Социальной психологии
                   <br><a href="files/Diploma.pdf" download><span class="icon"><i
                         class="fas fa-download"></i></span>Бакалавр</a>
                 </li>
-                <li class="skills">Курсы английского языка
+                <li class="education">Курсы английского языка
                   <br>ILAC International Language Academy of Canada
                   <br><a href="files/237015_Pre-Advanced.pdf"><span class="icon"><i
                         class="fas fa-download"></i></span>Pre-Advanced</a>

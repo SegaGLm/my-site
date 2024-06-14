@@ -164,14 +164,17 @@ p {
 
 .block-for-center {
   display: flex;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center; /* Центрирование по вертикали (если требуется) */
-  height: 89px; /* Обеспечивает, что блок занимает всю высоту родителя */
+  justify-content: center;
+  /* Центрирование по горизонтали */
+  align-items: center;
+  /* Центрирование по вертикали (если требуется) */
+  height: 89px;
+  /* Обеспечивает, что блок занимает всю высоту родителя */
 }
 
 .download-button {
   font-size: 18px;
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-weight: bold;
   width: 200px;
   height: 50px;
@@ -228,18 +231,31 @@ ul {
 
 .skills {
   margin-top: 15px;
+  font-size: 14px;
+  height: auto;
 }
 
 .skill-bar {
   background-color: #ffffff;
-  height: 6px;
-  width: 248px;
+  border: 1px solid #c9e3bff2;
+  height: 4px;
+  /* Фиксированная высота */
+  width: 100%;
   margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  /* Добавляем display: flex */
+  align-items: center;
+  /* Центрируем элементы по вертикали */
+  box-sizing: border-box;
+  /* Включаем учет рамки в общие размеры элемента */
 }
+
 
 .fill {
   background-color: #6f8c65f2;
-  height: 100%;
+  height: 6px
 }
 
 /* Общие стили для контейнера страницы */
@@ -299,6 +315,10 @@ ul {
   margin-right: auto;
   background-color: #ffffffde;
   border: 1px solid #c9e3bff2;
+}
+
+.education {
+  margin-top: 10px;
 }
 
 footer div p {
@@ -405,33 +425,55 @@ footer div p {
     font-size: 14px;
   }
 
+  .right-column li.skills {
+    font-size: 13px;
+  }
+
   hr.border_right {
     margin-top: 0px;
   }
 
   section.section-right-column h3,
   section.section-right-column ul {
-    margin-left: 30px;
+    text-align: center;
+  }
+
+  .skills {
+    margin-top: 15px;
+    font-size: 14px;
+    height: 100%;
   }
 
   .skill-bar {
     background-color: #ffffff;
-    height: 6px;
+    border: 1px solid #c9e3bff2;
+    height: 4px;
+    /* Фиксированная высота */
     width: 100%;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    /* Добавляем display: flex */
+    align-items: center;
+    /* Центрируем элементы по вертикали */
+    box-sizing: border-box;
+    /* Включаем учет рамки в общие размеры элемента */
   }
 
+
   .fill {
-    margin-left: -30px;
-    background-color: rgba(111, 140, 101, 0.949);
-    height: 100%;
+    background-color: #6f8c65f2;
+    height: 6px
+  }
+
+  .education {
+    margin-top: 10px;
   }
 
   .download-button {
     font-size: 16px;
-    font-family: Montserrat;
+    font-family: Montserrat, monospace;
     font-weight: bold;
     width: 200px;
     height: 50px;
