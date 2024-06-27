@@ -158,7 +158,7 @@ hr.border-left {
 
 p {
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: left;
   /* Отступ снизу для абзацев */
 }
 
