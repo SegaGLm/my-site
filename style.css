@@ -40,13 +40,31 @@
   /* Путь к файлу шрифта */
 }
 
+@font-face {
+  font-family: 'Geologica_thin';
+  src: url('font/Geologica_thin/ofont.ru_Geologica_thin.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Noah';
+  src: url('font/Noah/ofont.ru_Noah.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Montserrat_Med';
+  src: url('font/Montserrat_Med/ofont.ru_Montserrat_Med.ttf');
+  /* Путь к файлу шрифта */
+}
+
 /* Сброс стандартных стилей */
 body {
   margin: 0;
   padding: 0;
-  font-family: Nunito, monospace;
+  font-family: Montserrat_Med, monospace;
   /* Установка шрифта */
-  font-size: 16px;
+  font-size: 15px;
   /* Размер шрифта по умолчанию */
   line-height: 1.6;
   /* Межстрочный интервал */
@@ -118,7 +136,6 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  /* Жирный шрифт для заголовков */
   margin-top: 40px;
 }
 
@@ -173,9 +190,8 @@ p {
 }
 
 .download-button {
-  font-size: 20px;
-  font-family: Nunito, monospace;
-  font-weight: normal;
+  font-size: 17px;
+  font-family: Montserrat_Med, monospace;
   width: 200px;
   height: 50px;
   border-width: 0px;
@@ -268,9 +284,10 @@ ul {
 }
 
 .right-column {
+  font-weight: normal;
   width: 33%;
   padding-top: 20px;
-  color: #232323;
+  color: #4e4e4e;
 }
 
 .background {
@@ -299,11 +316,12 @@ ul {
 
 
 .left-column {
+  font-weight: normal;
   width: 67%;
   background-color: #ffffff;
   /* Светлая колонка */
   padding-top: 20px;
-  color: #232323;
+  color: #4e4e4e;
 }
 
 .section-left-column {
@@ -422,7 +440,7 @@ footer div p {
   }
 
   .right-column li {
-    font-size: 14px;
+    font-size: 14;
   }
 
   .right-column li.skills {
@@ -472,9 +490,8 @@ footer div p {
   }
 
   .download-button {
-    font-size: 20px;
-    font-family: Nunito, monospace;
-    font-weight: normal;
+    font-size: 15px;
+    font-family: Montserrat_Med, monospace;
     width: 200px;
     height: 50px;
     border-width: 0px;
