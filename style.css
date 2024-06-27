@@ -165,7 +165,7 @@ p {
 }
 
 hr.border-right {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 hr.border-left {
@@ -185,11 +185,12 @@ p {
   /* Центрирование по горизонтали */
   align-items: center;
   /* Центрирование по вертикали (если требуется) */
-  height: 89px;
+  height: 57px;
   /* Обеспечивает, что блок занимает всю высоту родителя */
 }
 
 .download-button {
+  margin-top: 27px;
   font-size: 17px;
   font-family: Montserrat_Med, monospace;
   width: 200px;
@@ -414,7 +415,7 @@ footer div p {
 
   .section-right-column {
     padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -447,8 +448,8 @@ footer div p {
     font-size: 13px;
   }
 
-  hr.border_right {
-    margin-top: 0px;
+  hr.border-right {
+    margin-top: 30px;
   }
 
   section.section-right-column h3,
