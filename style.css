@@ -5,12 +5,6 @@
 }
 
 @font-face {
-  font-family: 'RobotoMono';
-  src: url('font/Roboto_mono/RobotoMono.ttf');
-  /* Путь к файлу шрифта */
-}
-
-@font-face {
   font-family: 'ShentoxRegular';
   src: url('font/Shentox_Regular/ShentoxRegular.ttf');
   /* Путь к файлу шрифта */
@@ -40,11 +34,17 @@
   /* Путь к файлу шрифта */
 }
 
+@font-face {
+  font-family: 'Nunito';
+  src: url('font/Nunito/ofont.ru_Nunito.ttf');
+  /* Путь к файлу шрифта */
+}
+
 /* Сброс стандартных стилей */
 body {
   margin: 0;
   padding: 0;
-  font-family: Geologica, monospace;
+  font-family: Nunito, monospace;
   /* Установка шрифта */
   font-size: 16px;
   /* Размер шрифта по умолчанию */
@@ -90,7 +90,7 @@ body {
   font-family: Montserrat, monospace;
   font-weight: bold;
   font-size: 72px;
-  margin-left: -3px;
+  margin-left: -2px;
   margin-top: 5px;
   margin-bottom: 0px;
 }
@@ -173,14 +173,14 @@ p {
 }
 
 .download-button {
-  font-size: 18px;
-  font-family: Montserrat, monospace;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: Nunito, monospace;
+  font-weight: normal;
   width: 200px;
   height: 50px;
   border-width: 0px;
   color: #fff;
-  border-color: rgba(111, 140, 101, 0.61);
+  border-color: #6f8c659c;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -270,7 +270,7 @@ ul {
 .right-column {
   width: 33%;
   padding-top: 20px;
-  color: #5d5d5d;
+  color: #232323;
 }
 
 .background {
@@ -303,7 +303,7 @@ ul {
   background-color: #ffffff;
   /* Светлая колонка */
   padding-top: 20px;
-  color: #5d5d5d;
+  color: #232323;
 }
 
 .section-left-column {
@@ -338,7 +338,7 @@ footer div p {
     font-family: Montserrat, monospace;
     font-weight: bold;
     font-size: 36px;
-    margin-left: 17px;
+    margin-left: 19px;
     margin-top: 30px;
     margin-bottom: 0px;
   }
@@ -472,14 +472,14 @@ footer div p {
   }
 
   .download-button {
-    font-size: 16px;
-    font-family: Montserrat, monospace;
-    font-weight: bold;
+    font-size: 20px;
+  font-family: Nunito, monospace;
+  font-weight: normal;
     width: 200px;
     height: 50px;
     border-width: 0px;
     color: #fff;
-    border-color: rgba(111, 140, 101, 0.61);
+    border-color: #6f8c659c;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
