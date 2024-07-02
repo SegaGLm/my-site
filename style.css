@@ -87,6 +87,26 @@ body {
   margin: 20px;
 }
 
+.link-to-english {
+  font-family: Geologica, monospace;
+  position: absolute;
+  /* Абсолютное позиционирование */
+  right: 10px;
+  /* Позиционирование справа */
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  font-size: 16px;
+  /* Размер шрифта */
+  color: white;
+  /* Цвет текста */
+  padding-right: 10px;
+}
+
+.link-to-english:hover {
+  color: #df3f3fd8;
+  /* Цвет текста при наведении */
+}
+
 .centered-block {
   width: 100%;
   max-width: 1024px;
@@ -331,7 +351,6 @@ ul {
   /* Внутренние отступы для контейнера */
   margin-bottom: 20px;
   margin-left: 0px;
-  margin-right: auto;
   background-color: #ffffffde;
   border: 1px solid #c9e3bff2;
 }
@@ -410,7 +429,9 @@ footer div p {
   .section-left-column {
     padding-top: 10px;
     margin-bottom: 10px;
-    width: 90%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section-right-column {
