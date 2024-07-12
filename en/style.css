@@ -1,0 +1,530 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('font/Rubik/Rubik.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'ShentoxRegular';
+  src: url('font/Shentox_Regular/ShentoxRegular.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('font/Open_Sans/OpenSans.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'SourceCodeProRegular';
+  src: url('font/SourceCodePro/SourceCodePro-Regular.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Geologica';
+  src: url('font/Geologica/ofont.ru_Geologica.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat/ofont.ru_Montserrat.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('font/Nunito/ofont.ru_Nunito.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Geologica_thin';
+  src: url('font/Geologica_thin/ofont.ru_Geologica_thin.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Noah';
+  src: url('font/Noah/ofont.ru_Noah.ttf');
+  /* Путь к файлу шрифта */
+}
+
+@font-face {
+  font-family: 'Montserrat_Med';
+  src: url('font/Montserrat_Med/ofont.ru_Montserrat_Med.ttf');
+  /* Путь к файлу шрифта */
+}
+
+/* Сброс стандартных стилей */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat_Med, monospace;
+  /* Установка шрифта */
+  font-size: 15px;
+  /* Размер шрифта по умолчанию */
+  line-height: 1.6;
+  /* Межстрочный интервал */
+}
+
+.intro {
+  position: relative;
+  /* 100% высоты видимой области */
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.link-to-github {
+  font-family: Geologica, monospace;
+  color: white;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.link-to-english {
+  font-family: Geologica, monospace;
+  position: absolute;
+  /* Абсолютное позиционирование */
+  right: 10px;
+  /* Позиционирование справа */
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  font-size: 16px;
+  /* Размер шрифта */
+  color: white;
+  /* Цвет текста */
+  padding-right: 10px;
+}
+
+.link-to-english:hover {
+  color: #df3f3fd8;
+  /* Цвет текста при наведении */
+}
+
+.centered-block {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  max-height: 250px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: transparent;
+  /* Прозрачный фон */
+  color: white;
+  /* Белый текст */
+  box-sizing: border-box;
+  /* Учитывать padding в размерах блока */
+}
+
+.centered-block h1 {
+  font-family: Montserrat, monospace;
+  font-weight: bold;
+  font-size: 72px;
+  margin-left: -2px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.centered-block h3 {
+  font-family: Montserrat, monospace;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 0px;
+  margin-top: -10px;
+}
+
+.main-container {
+  width: 1024px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Общие стили для всех элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+/* Общие стили для заголовков */
+h1 {
+  font-size: 24px;
+  /* Размер шрифта для h1 */
+}
+
+h2 {
+  font-size: 22px;
+  /* Размер шрифта для h2 */
+}
+
+h3 {
+  font-size: 20px;
+  /* Размер шрифта для h2 */
+}
+
+h4 {
+  font-size: 18px;
+  /* Размер шрифта для h2 */
+}
+
+p {
+  font-size: 14px;
+}
+
+hr.border-right {
+  margin-top: 45px;
+}
+
+hr.border-left {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: left;
+  /* Отступ снизу для абзацев */
+}
+
+.block-for-center {
+  display: flex;
+  justify-content: center;
+  /* Центрирование по горизонтали */
+  align-items: center;
+  /* Центрирование по вертикали (если требуется) */
+  height: 57px;
+  /* Обеспечивает, что блок занимает всю высоту родителя */
+}
+
+.download-button {
+  margin-top: 27px;
+  font-size: 17px;
+  font-family: Montserrat_Med, monospace;
+  width: 200px;
+  height: 50px;
+  border-width: 0px;
+  color: #fff;
+  border-color: #6f8c659c;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 3px 3px 2px 0px rgba(111, 140, 101, 1);
+  background: linear-gradient(rgba(111, 140, 101, 1), rgba(111, 140, 101, 0.61));
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.download-button:hover {
+  background: linear-gradient(rgba(111, 140, 101, 0.61), rgba(111, 140, 101, 1));
+}
+
+.download-button:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 1px 0px rgba(111, 140, 101, 0.7);
+}
+
+a {
+  color: #6f8c65f2;
+  /* Установите желаемый цвет ссылки, например, красный (#ff0000) */
+  text-decoration: none;
+  /* Убираем подчеркивание (если необходимо) */
+}
+
+/* Стили при наведении на гиперссылку */
+a:hover {
+  color: #df3f3fd8;
+  /* Установите цвет при наведении, например, зеленый (#00ff00) */
+}
+
+ul {
+  list-style-type: none;
+  /* Убираем маркеры */
+  padding: 0;
+  /* Убираем внутренний отступ */
+  margin: 0;
+  /* Убираем внешний отступ */
+}
+
+.icon {
+  margin-right: 5px
+}
+
+.icon i {
+  color: #6f8c65f2;
+}
+
+.skills {
+  margin-top: 15px;
+  font-size: 14px;
+  height: auto;
+}
+
+.skill-bar {
+  background-color: #ffffff;
+  border: 1px solid #c9e3bff2;
+  height: 4px;
+  /* Фиксированная высота */
+  width: 100%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  /* Добавляем display: flex */
+  align-items: center;
+  /* Центрируем элементы по вертикали */
+  box-sizing: border-box;
+  /* Включаем учет рамки в общие размеры элемента */
+}
+
+
+.fill {
+  background-color: #6f8c65f2;
+  height: 6px
+}
+
+/* Общие стили для контейнера страницы */
+.container {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.right-column {
+  font-weight: normal;
+  width: 33%;
+  padding-top: 20px;
+  color: #4e4e4e;
+}
+
+.background {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #faeffff4;
+  background:
+    url('files/cubes.png') repeat,
+    #faeffff4;
+  border: 1px solid #faeffff4;
+  box-sizing: border-box;
+  /* Добавьте это свойство */
+}
+
+.text-right-column {
+  width: 100%;
+}
+
+.section-right-column {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.left-column {
+  font-weight: normal;
+  width: 67%;
+  background-color: #ffffff;
+  /* Светлая колонка */
+  padding-top: 20px;
+  color: #4e4e4e;
+}
+
+.section-left-column {
+  width: 88.5%;
+  padding: 20px;
+  /* Внутренние отступы для контейнера */
+  margin-bottom: 20px;
+  margin-left: 0px;
+  background-color: #ffffffde;
+  border: 1px solid #c9e3bff2;
+}
+
+.education {
+  margin-top: 10px;
+}
+
+footer div p {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  /* Чтобы содержимое футера было выровнено по центру */
+  padding: 10px 0;
+  /* Настройка отступов сверху и снизу для выравнивания по вертикали */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+
+  .centered-block h1 {
+    font-family: Montserrat, monospace;
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 19px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .centered-block h3 {
+    font-family: Montserrat, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+
+  .link-to-github {
+    font-family: Geologica;
+    color: white;
+    font-size: 16px;
+    margin: 17px;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .right-column {
+    margin-top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 10px;
+  }
+
+  .profile-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-left-column {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-right-column {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .right-column li {
+    font-size: 14;
+  }
+
+  .right-column li.skills {
+    font-size: 13px;
+  }
+
+  hr.border-right {
+    margin-top: 30px;
+  }
+
+  section.section-right-column h3,
+  section.section-right-column ul {
+    text-align: center;
+  }
+
+  .skills {
+    margin-top: 15px;
+    font-size: 14px;
+    height: 100%;
+  }
+
+  .skill-bar {
+    background-color: #ffffff;
+    border: 1px solid #c9e3bff2;
+    height: 4px;
+    /* Фиксированная высота */
+    width: 100%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* Добавляем display: flex */
+    align-items: center;
+    /* Центрируем элементы по вертикали */
+    box-sizing: border-box;
+    /* Включаем учет рамки в общие размеры элемента */
+  }
+
+
+  .fill {
+    background-color: #6f8c65f2;
+    height: 6px
+  }
+
+  .education {
+    margin-top: 10px;
+  }
+
+  .download-button {
+    font-size: 16px;
+    font-family: Montserrat_Med, monospace;
+    width: 200px;
+    height: 50px;
+    border-width: 0px;
+    color: #fff;
+    border-color: #6f8c659c;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 3px 3px 2px 0px rgba(111, 140, 101, 1);
+    background: linear-gradient(rgba(111, 140, 101, 1), rgba(111, 140, 101, 0.61));
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+}
