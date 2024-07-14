@@ -317,7 +317,7 @@ ul {
   height: 100%;
   background: #faeffff4;
   background:
-    url('files/cubes.png') repeat,
+    url('../files/cubes.png') repeat,
     #faeffff4;
   border: 1px solid #faeffff4;
   box-sizing: border-box;
