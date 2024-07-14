@@ -1,60 +1,60 @@
 @font-face {
   font-family: 'Rubik';
-  src: url('font/Rubik/Rubik.ttf');
+  src: url('../font/Rubik/Rubik.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'ShentoxRegular';
-  src: url('font/Shentox_Regular/ShentoxRegular.ttf');
+  src: url('../font/Shentox_Regular/ShentoxRegular.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('font/Open_Sans/OpenSans.ttf');
+  src: url('../font/Open_Sans/OpenSans.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'SourceCodeProRegular';
-  src: url('font/SourceCodePro/SourceCodePro-Regular.ttf');
+  src: url('../font/SourceCodePro/SourceCodePro-Regular.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'Geologica';
-  src: url('font/Geologica/ofont.ru_Geologica.ttf');
+  src: url('../font/Geologica/ofont.ru_Geologica.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('font/Montserrat/ofont.ru_Montserrat.ttf');
+  src: url('../font/Montserrat/ofont.ru_Montserrat.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'Nunito';
-  src: url('font/Nunito/ofont.ru_Nunito.ttf');
+  src: url('../font/Nunito/ofont.ru_Nunito.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'Geologica_thin';
-  src: url('font/Geologica_thin/ofont.ru_Geologica_thin.ttf');
+  src: url('../font/Geologica_thin/ofont.ru_Geologica_thin.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'Noah';
-  src: url('font/Noah/ofont.ru_Noah.ttf');
+  src: url('../font/Noah/ofont.ru_Noah.ttf');
   /* Путь к файлу шрифта */
 }
 
 @font-face {
   font-family: 'Montserrat_Med';
-  src: url('font/Montserrat_Med/ofont.ru_Montserrat_Med.ttf');
+  src: url('../font/Montserrat_Med/ofont.ru_Montserrat_Med.ttf');
   /* Путь к файлу шрифта */
 }
 
