@@ -60,6 +60,7 @@
 
 /* Сброс стандартных стилей */
 body {
+  max-width: 100%;
   margin: 0;
   padding: 0;
   font-family: Montserrat_Med, monospace;
@@ -71,6 +72,7 @@ body {
 }
 
 .intro {
+  max-width: 100%;
   position: relative;
   /* 100% высоты видимой области */
   height: 400px;
@@ -78,6 +80,11 @@ body {
   margin: 0 auto;
   margin-bottom: 2px;
   box-sizing: border-box;
+}
+
+.vanta-canvas {
+  width: 100% !important; /* Замените на желаемое значение */
+  height: 100% !important; /* Если также нужно установить высоту */
 }
 
 .link-to-github {
@@ -249,6 +256,16 @@ a:hover {
   /* Установите цвет при наведении, например, зеленый (#00ff00) */
 }
 
+ul.businesses {
+  list-style-type: square;
+  /* Убираем маркеры */
+  padding: 0px;
+  padding-left: 60px;
+  /* Убираем внутренний отступ */
+  margin: 0;
+  /* Убираем внешний отступ */
+}
+
 ul {
   list-style-type: none;
   /* Убираем маркеры */
@@ -321,7 +338,6 @@ ul {
     #faeffff4;
   border: 1px solid #faeffff4;
   box-sizing: border-box;
-  /* Добавьте это свойство */
 }
 
 .text-right-column {
@@ -353,6 +369,16 @@ ul {
   margin-left: 0px;
   background-color: #ffffffde;
   border: 1px solid #c9e3bff2;
+}
+
+.section-left-column-main {
+  width: 88.5%;
+  padding: 20px;
+  /* Внутренние отступы для контейнера */
+  margin-bottom: 20px;
+  margin-left: 0px;
+  background: url('../files/cubes.png') repeat, #faeffff4;
+  border: 1px solid #faeffff4;
 }
 
 .education {
@@ -427,6 +453,14 @@ footer div p {
   }
 
   .section-left-column {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-left-column-main {
     padding-top: 10px;
     margin-bottom: 10px;
     margin-bottom: 20px;
